@@ -1,0 +1,36 @@
+/*HEADER*/
+.header-anita{
+    background-color: rgb(238, 177, 157);
+}
+
+.botonav{
+    background-color: rgb(243, 217, 234);
+}
+/*FIN HEADER*/
+
+
+
+
+/*footer*/
+
+#contacto{
+    height: 15vh;
+    padding: 1% 5%;
+    background-color: rgb(238, 177, 157);
+}
+
+.contenido{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+.contenido iframe{
+    width: 10vw;
+    height: 7vh;
+    object-fit: cover;
+}
+
+.facebook, .instagram{
+    display: block;
+}

@@ -1,103 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WINTER22</title>
-</head>
-<body>
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home-desafio</title>
-    <!--CONECTO CON MI CSS-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>winter22</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-</head>
+  </head>
 
-<body>
-    <!--header-->
+  <body>
+    <!--HEADER-->
     <header>
-        <div class="logo">
-            <img  src="multimedia/imagenes/logo.jpeg" alt="logo de la empresa">
-        </div>
-        
-
-    <!--menu principal-->
-    <div>
-            <ul class="menu">
-                <li class="boton"><a href="index.html">Inicio</a></li>
-
-                <li class="boton"><a href="">Productos</a>
-                    <ul>
-                        <li class="boton"><a href="sale.html">SALE</a>
-                        <li class="boton"><a href="winter22.html">WINTER22</a>
+        <nav class="navbar navbar-expand-lg w-100 header-anita">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="multimedia/imagenes/logo.jpeg" alt="logo de la empresa" width="120" height="120" class="d-inline-block align-text-top rounded-circle border border-secondary border-3">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item botonav">
+                    <a class="nav-link active border border-1 border-secondary border-end-0" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item botonav">
+                    <a class="nav-link border border-1 border-secondary border-end-0" href="comocomprar.html">Como Comprar</a>
+                  </li>
+                  <li class="nav-item botonav">
+                    <a class="nav-link border border-1 border-secondary border-end-0" href="quienessomos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item botonav">
+                    <a class="nav-link border border-1 border-secondary border-end-0" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                  </li>
+                  <li class="nav-item botonav">
+                    <a class="nav-link border border-1 border-secondary border-end-0" href="#contacto">Contactanos</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown botonav">
+                    <a class="nav-link dropdown-toggle border border-1 border-secondary" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu botonav" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item border-end border-1 border-secondary" href="sale.html">Sale</a></li>
+                      <li><a class="dropdown-item border-top border-1 border-secondary" href="winter22.html">Winter22</a></li>
                     </ul>
-                </li>
-
-                <li class="boton"><a href="comocomprar.html">Como comprar</a></li>
-
-                <li class="boton"><a href="quienessomos.html">Quienes somos</a></li>
-
-                <li class="boton"><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-
-                <li class="boton"><a href="#contacto">Contactanos</a></li>
-            </ul>
-    </div>
-        
-    <!--fin menu principal-->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    
+    <!--FIN HEADER-->
 
-<main class="winter">
-    <!--titulo-->
-    <h1>WINTER 2022</h1>
+    <!--contenido winter-->
 
-    <!--GALERIA DE FOTOS-->
+    <section class="bgcolorwinter">
+      <div class="container">
+        <div class="row row-cols-4">
 
-    <div class="galeria">
-        <div class="columna">
-            <img src="multimedia/imagenes/winter22/botas1.jpeg" alt="botas1">
-            <img src="multimedia/imagenes/winter22/botas2.jpeg" alt="botas2">
-            <img src="multimedia/imagenes/winter22/botas3.jpeg" alt="botas3">
-            <img src="multimedia/imagenes/winter22/botas4.jpeg" alt="botas4">
-            <img src="multimedia/imagenes/winter22/botas5.jpeg" alt="botas5">
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas1.jpeg" class="card-img-top" alt="botas1">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas2.jpeg" class="card-img-top" alt="botas2">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas3.jpeg" class="card-img-top" alt="botas3">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas4.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas5.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas6.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas7.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas8.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/texanas1.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas9.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas1.jpeg" class="card-img-top" alt="botas1">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas2.jpeg" class="card-img-top" alt="botas2">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas3.jpeg" class="card-img-top" alt="botas3">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas4.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas5.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas6.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas7.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas8.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/texanas1.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="multimedia/imagenes/winter22/botas9.jpeg" class="card-img-top" alt="botas4">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">7000</a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="columna">
-            <img src="multimedia/imagenes/winter22/botas6.jpeg" alt="botas6">
-            <img src="multimedia/imagenes/winter22/botas7.jpeg" alt="botas7">
-            <img src="multimedia/imagenes/winter22/botas8.jpeg" alt="botas8">
-            <img src="multimedia/imagenes/winter22/texanas1.jpeg" alt="texanas1">
-            <img src="multimedia/imagenes/winter22/botas9.jpeg" alt="botas9">
-        </div>
-
-        <div class="columna">
-            <img src="multimedia/imagenes/winter22/botas10.jpeg" alt="botas10">
-            <img src="multimedia/imagenes/winter22/botas11.jpeg" alt="botas11">
-            <img src="multimedia/imagenes/winter22/botas12.jpeg" alt="botas12">
-            <img src="multimedia/imagenes/winter22/botas13.jpeg" alt="botas13">
-            <img src="multimedia/imagenes/winter22/botas14.jpeg" alt="botas14">
-        </div>
-
-        <div class="columna">
-            <img src="multimedia/imagenes/winter22/botas15.jpeg" alt="botas15">
-            <img src="multimedia/imagenes/winter22/botas16.jpeg" alt="botas16">
-            <img src="multimedia/imagenes/winter22/botas17.jpeg" alt="botas17">
-            <img src="multimedia/imagenes/winter22/botas18.jpeg" alt="botas18">
-            <img src="multimedia/imagenes/winter22/botas19.jpeg" alt="botas19">
-        </div>
-
-    </div>
-
-</main>
-
-
-
+      </div>
+    </section>
 
     <!--footer-->
     <footer id="contacto">
@@ -118,9 +261,9 @@
                 <i>icono de instagram</i>
             </a>
         </div>
-        
     </footer>
     <!--fin footer-->
-    
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -1,69 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home-desafio</title>
-    <!--CONECTO CON MI CSS-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preguntas Frecuentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-</head>
+  </head>
 
-<body>
-    <!--header-->
+  <body>
+    <!--HEADER-->
     <header>
-        <div class="logo">
-            <img  src="multimedia/imagenes/logo.jpeg" alt="logo de la empresa">
-        </div>
-        
-
-    <!--menu principal-->
-    <div>
-            <ul class="menu">
-                <li class="boton"><a href="index.html">Inicio</a></li>
-
-                <li class="boton"><a href="">Productos</a>
-                    <ul>
-                        <li class="boton"><a href="sale.html">SALE</a>
-                        <li class="boton"><a href="winter22.html">WINTER22</a>
+        <nav class="navbar navbar-expand-lg w-100 header-anita">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="multimedia/imagenes/logo.jpeg" alt="logo de la empresa" width="120" height="120" class="d-inline-block align-text-top rounded-circle border border-secondary border-3">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item botonav">
+                    <a class="nav-link active border border-1 border-secondary border-end-0" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item botonav">
+                    <a class="nav-link border border-1 border-secondary border-end-0" href="comocomprar.html">Como Comprar</a>
+                  </li>
+                  <li class="nav-item botonav">
+                    <a class="nav-link border border-1 border-secondary border-end-0" href="quienessomos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item botonav">
+                    <a class="nav-link border border-1 border-secondary border-end-0" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                  </li>
+                  <li class="nav-item botonav">
+                    <a class="nav-link border border-1 border-secondary border-end-0" href="#contacto">Contactanos</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown botonav">
+                    <a class="nav-link dropdown-toggle border border-1 border-secondary" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu botonav" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item border-end border-1 border-secondary" href="sale.html">Sale</a></li>
+                      <li><a class="dropdown-item border-top border-1 border-secondary" href="winter22.html">Winter22</a></li>
                     </ul>
-                </li>
-
-                <li class="boton"><a href="comocomprar.html">Como comprar</a></li>
-
-                <li class="boton"><a href="quienessomos.html">Quienes somos</a></li>
-
-                <li class="boton"><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-
-                <li class="boton"><a href="#contacto">Contactanos</a></li>
-            </ul>
-    </div>
-        
-    <!--fin menu principal-->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <!--Fin header-->
-<main class="preguntas__frecuentes">
-    <h1>Preguntas frecuentes</h1>
+    <!--FIN HEADER-->
+    
 
-<section class="preguntas_frecuentes">
-    <h2>¿Cuál es el horario de la Shop?</h2>
-    <p>El shop está disponible para comprar las 24hs, los 365 días del año. El horario de atención al cliente es de 9 A 19HS, de lunes a viernes</p>
+    <section class="comocard">
+        <div class="card  como" >
+            <div class="card-header bgcard">
+            </div>
+              <h1 class="card-title text-center">Preguntas Frecuentes</h1>
+              <h4>¿Cuál es el horario de la Shop?</h4>
+              <p>El shop está disponible para comprar las 24hs, los 365 días del año. El horario de atención al cliente es de 9 A 19HS, de lunes a viernes</p>
 
-    <h2>¿Cómo realizo el pago de mi compra?</h2>
-    <p>El procesamiento del pago será realizado a través del servicio de Mercado Pago.
+              <h4>¿Cómo realizo el pago de mi compra?</h4>
+              <p>El procesamiento del pago será realizado a través del servicio de Mercado Pago.
         MERCADO PAGO - TARJETAS DE CREDITO: VISA, MASTERCARD, AMERICAN EXPRESS, TARJETA NARANJA, ARGENCARD, TARJETA SHOPPING, NATIVA, CENCOSUD Y CABAL.
         MERCADO PAGO -CUPON DE PAGO: PARA ABONAR EN SUCURSALES DE RAPIPAGO, PAGOFACIL, LINK Y PROVINCIA NET.</p>
 
-    <h2>¿Cuáles son las formas de envío?</h2>
-    <p>Los envíos se realizan a través de Correo Argentino®: podes recibir tu pedido en tu domicilio o en la sucursal de Correo Argentino® más cercana a tu domicilio.</p>
+              <h4>¿Cuáles son las formas de envío?</h4>
+              <p>Los envíos se realizan a través de Correo Argentino®: podes recibir tu pedido en tu domicilio o en la sucursal de Correo Argentino® más cercana a tu domicilio.</p>
 
-    <h2>¿Cuáles son los costos de envío?</h2>
-    <p>El costo del envío varía en base a la distancia y el peso. Con tu código postal podés calcular el costo de envío antes de realizar la compra. Se calcula el envío a domicilio y el envío a sucursal.</p>
+              <h4>¿Cuáles son los costos de envío?</h4>
+              <p>El costo del envío varía en base a la distancia y el peso. Con tu código postal podés calcular el costo de envío antes de realizar la compra. Se calcula el envío a domicilio y el envío a sucursal.</p>
 
-    <h2>¿Cuánto demora la entrega de mi pedido?</h2>
-    <p>El tiempo de entrega de los envíos va a depender de la localidad de destino, y del servicio que hayas contratado, si estas en las principales localidades del país Correo Argentino te estará realizando la 1er visita de 3 a 5 días hábiles de haberlo despachado. El despacho del envío en época de liquidación, promociones o hot sale puede demorar más de lo habitual. Si el correo no te pudo encontrar va a dejar tu envío en la sucursal más cercana durante 5 días hábiles para que lo pases a retirar. En caso de no retirarlo, el envío se le cobrará al comprador y la compra será cancelada.</p>
-</section>
-</main>
+              <h4>¿Cuánto demora la entrega de mi pedido?</h4>
+              <p>El tiempo de entrega de los envíos va a depender de la localidad de destino, y del servicio que hayas contratado, si estas en las principales localidades del país Correo Argentino te estará realizando la 1er visita de 3 a 5 días hábiles de haberlo despachado. El despacho del envío en época de liquidación, promociones o hot sale puede demorar más de lo habitual. Si el correo no te pudo encontrar va a dejar tu envío en la sucursal más cercana durante 5 días hábiles para que lo pases a retirar. En caso de no retirarlo, el envío se le cobrará al comprador y la compra será cancelada.</p>
+            <div class="card-footer text-muted bgcard">
+            </div>
+        </div>
+    </section>
 
     <!--footer-->
     <footer id="contacto">
@@ -88,5 +103,6 @@
     </footer>
     <!--fin footer-->
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>

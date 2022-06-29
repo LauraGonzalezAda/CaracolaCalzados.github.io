@@ -50,7 +50,6 @@ h1{
     font-family: 'Kanit', sans-serif;
     color: darkslategray;
     padding: 2% 0%;
-    margin: 2% 0%;
 }
 
 .videoz{
@@ -62,7 +61,7 @@ h1{
 }
 /*fin index*/
 
-/*contenido como comprar*/
+/*contenido como comprar- quienes somos-preguntasfrecuentes*/
 
 .como{
     width: 60vw;
@@ -78,4 +77,43 @@ h1{
 .bgcard{
     background-color: darkslategray;
 }
+
+ol li{
+    text-align: left;
+}
 /*fin como comprar*/
+
+/*winter*/
+.imgcol{
+    height: 50vh;
+    object-fit: cover;
+}
+
+.bgcolorwinter{
+    background-color: darkslategray;
+}
+
+.col{
+    padding: 10px;
+}
+
+.card-img-top{
+    height: 50vh;
+    object-fit: cover;
+}
+
+/*sale*/
+
+.fotosale{
+    height: 50vh;
+    object-fit: cover;
+}
+
+.sale{
+    background-color: darkslategray;
+}
+
+#saletitulo{
+    background-color: rgb(243, 217, 234);
+    text-align: center;
+}

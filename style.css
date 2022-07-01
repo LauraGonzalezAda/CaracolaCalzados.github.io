@@ -1,4 +1,7 @@
 /*header*/
+header{
+    width: 100%;
+}
 .header-anita{
     background-color: rgb(238, 177, 157);
 }
@@ -6,12 +9,25 @@
 .botonav{
     background-color: rgb(243, 217, 234);
 }
+
+.botonav:hover{
+    background-color: rgb(245, 189, 225);
+}
+
+.logo{
+    transition: all 3s;
+}
+
+.logo:hover{
+    transform: rotate(360deg)
+}
+
 /*fin header*/
 
 
 /*footer*/
 #contacto{
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     padding: 1% 5%;
     background-color: rgb(238, 177, 157);
@@ -84,6 +100,45 @@ ol li{
 /*fin como comprar*/
 
 /*winter*/
+
+.conttargeta{
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.conttargeta:hover .targeta{
+    transform: rotateY(180deg);
+}
+
+.targeta{
+    cursor: default;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    -webkit-animation: giro 1s 1;
+    align-items: center;
+    border: none;
+}
+
+.frontfoto, .backfoto{
+    backface-visibility: hidden;
+    color: black;
+    position: absolute;
+    text-align: center;
+    height: 50vh;
+}
+
+.backfoto{
+    transform: rotateY(180deg);
+    background-color: rgb(243, 217, 234);
+}
+
+.container{
+    padding-top: 4%;
+}
+
+
 .imgcol{
     height: 50vh;
     object-fit: cover;
@@ -116,4 +171,52 @@ ol li{
 #saletitulo{
     background-color: rgb(243, 217, 234);
     text-align: center;
+}
+
+@media screen and (max-width:480px){
+    #contacto{
+        font-size: x-small;
+    }
+
+    .row-cols-3{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 40vh);
+    }
+
+    .row-cols-4{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(20, 40vh);
+    }
+    
+    .backfoto, .frontfoto{
+        height: 100%;
+        width: 100%;
+    }
+
+    .targeta{
+        height: 35vh;
+        width: 80vw;
+    }
+
+    .parrafoto{
+        font-size: small;
+    }
+
+    ol li{
+        font-size: x-small;
+    }
+
+    .como{
+        width: 90vw;
+    }
+
+    .texto{
+        font-size: x-small;
+    }
+
+    .titulotexto{
+        font-size: small;
+    }
 }

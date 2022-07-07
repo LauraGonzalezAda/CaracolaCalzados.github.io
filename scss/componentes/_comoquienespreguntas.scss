@@ -1,0 +1,34 @@
+.comocard{
+    text-align: -webkit-center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+.como{
+    width: 60vw;
+    background-color: rgb(243, 217, 234);
+    @media screen and (max-width: 480px) {
+        width: 90vw;
+    }
+    .bgcard{
+        background-color: darkslategray;
+    }
+    ol{
+        li{
+            text-align: left;
+            @media screen and (max-width: 480px) {
+                font-size: x-small;
+            }
+        }
+    }
+    .titulotexto{
+        @media screen and (max-width: 480px) {
+            font-size: small;
+        }
+    }
+    .texto{
+        @media screen and (max-width: 480px) {
+            font-size: x-small;
+        }
+    }
+}
+}
+

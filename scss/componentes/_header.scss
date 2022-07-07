@@ -1,0 +1,22 @@
+header{
+    width: 100%;
+    .header-anita{
+        background-color: rgb(238, 177, 157);
+        div{
+            .logo{
+                transition: all 3s;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+            }
+            ul{
+                .botonav{
+                    background-color: rgb(243, 217, 234);
+                    &:hover{
+                        background-color: rgb(245, 189, 225);
+                    }
+                }
+            }
+        }
+    }
+}

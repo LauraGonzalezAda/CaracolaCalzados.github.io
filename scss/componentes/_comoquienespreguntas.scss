@@ -4,12 +4,12 @@
     padding-bottom: 10vh;
 .como{
     width: 60vw;
-    background-color: rgb(243, 217, 234);
+    background-color: $bg-claro;
     @media screen and (max-width: 480px) {
         width: 90vw;
     }
     .bgcard{
-        background-color: darkslategray;
+        background-color: $bg-oscuro;
     }
     ol{
         li{

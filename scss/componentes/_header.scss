@@ -1,7 +1,7 @@
 header{
     width: 100%;
     .header-anita{
-        background-color: rgb(238, 177, 157);
+        background-color: $bg-home-footer;
         div{
             .logo{
                 transition: all 3s;
@@ -11,7 +11,7 @@ header{
             }
             ul{
                 .botonav{
-                    background-color: rgb(243, 217, 234);
+                    background-color: $bg-claro;
                     &:hover{
                         background-color: rgb(245, 189, 225);
                     }

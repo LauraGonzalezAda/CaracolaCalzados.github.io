@@ -136,11 +136,6 @@ header {
     padding-top: 4%;
   }
   
-  .imgcol {
-    height: 50vh;
-    object-fit: cover;
-  }
-  
   .bgcolorwinter {
     background-color: darkslategray;
   }
@@ -162,11 +157,6 @@ header {
   
   .sale {
     background-color: darkslategray;
-  }
-  
-  #saletitulo {
-    background-color: rgb(243, 217, 234);
-    text-align: center;
   }
   
   @media screen and (max-width: 480px) {

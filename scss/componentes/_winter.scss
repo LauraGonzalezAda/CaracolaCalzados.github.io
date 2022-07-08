@@ -1,4 +1,5 @@
-.sale{
+
+section{
     background-color: $bg-oscuro;
     h1{
         font-family: "Kanit", sans-serif;
@@ -9,11 +10,11 @@
     .container{
         padding-top: 4%;
         div{
-            @media screen and (max-width: 480px){
+            @media screen and (max-width: 480px) {
                 display: grid;
                 grid-template-columns: auto;
-                grid-template-rows: repeat(6, 40vh);
-            }
+                grid-template-rows: repeat(20, 40vh);
+              }
             .col{
                 padding: 10px;
             }
@@ -22,6 +23,7 @@
                 transition: all 0.3s ease 0s;
                 height: 60vh;
                 object-fit: cover;
+
                 &:hover .targeta {
                     transform: rotateY(180deg);
                   }
@@ -36,7 +38,7 @@
                         height: 35vh;
                         width: 80vw;
                     }
-                    .fotosale{
+                    .card-img-top{
                         height: 50vh;
                         object-fit: cover;
                     }
@@ -50,6 +52,7 @@
                             height: 100%;
                             width: 100%;
                         }
+
                     }
                     .backfoto{
                         backface-visibility: hidden;

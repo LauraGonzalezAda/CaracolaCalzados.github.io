@@ -1,4 +1,5 @@
 .colorcarru{
+    border-bottom: map-get($bordes, borde);
     background-color: $bg-oscuro;
     div{
         div{
@@ -9,16 +10,29 @@
     }
 }
 h1{
+    background-color: $bg-home-footer;
     font-family: "Kanit", sans-serif;
-    color: $bg-oscuro;
+    color: lighten($bg-bordes, 20%);
     padding: 2% 0%;
+    border-bottom: map-get($bordes, borde);
+    margin: unset;
 }
 .cardindex{
-    padding-bottom: 10vh;
+    padding: 10vh 5%;
     div{
         div{
-            .videoz{
-                height: 50vh;
+            .card{
+                height: 100%;
+                border: map-get($bordes, borde);
+                .videoz{
+                    height: 50vh;
+                }
+                h5{
+                    font-family: map-get($bordes, texto);
+                }
+                p{
+                    font-family: map-get($bordes, texto);
+                }
             }
         }
     }

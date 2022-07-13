@@ -1,10 +1,8 @@
 .sale{
     background-color: $bg-oscuro;
     h1{
-        font-family: "Kanit", sans-serif;
-        color: $bg-home-footer;
-        padding: 2% 0%;
-        text-align: center;
+        @extend %h1-winter-sale;
+        font-family: map-get($bordes, texto);
     }
     .container{
         padding-top: 4%;
@@ -12,60 +10,30 @@
             @media screen and (max-width: 480px){
                 display: grid;
                 grid-template-columns: auto;
-                grid-template-rows: repeat(6, 40vh);
+                grid-template-rows: repeat(6, auto);
             }
             .col{
                 padding: 10px;
             }
             .conttargeta{
-                perspective: 800px;
-                transition: all 0.3s ease 0s;
-                height: 60vh;
-                object-fit: cover;
-                &:hover .targeta {
-                    transform: rotateY(180deg);
+                @extend %contenedortarjetas;
                   }
                 .targeta{
-                    cursor: default;
-                    transform-style: preserve-3d;
-                    transition: transform 0.4s ease 0s;
-                    -webkit-animation: giro 1s 1;
-                    align-items: center;
-                    border: none;
-                    @media screen and (max-width: 480px){
-                        height: 35vh;
-                        width: 80vw;
+                    @extend %tarjeta;
                     }
                     .fotosale{
                         height: 50vh;
                         object-fit: cover;
                     }
                     .frontfoto{
-                        backface-visibility: hidden;
-                        color: black;
-                        position: absolute;
-                        text-align: center;
-                        height: 50vh;
-                        @media screen and (max-width: 480px){
-                            height: 100%;
-                            width: 100%;
+                        @extend %frontfoto;
+                        
                         }
                     }
                     .backfoto{
-                        backface-visibility: hidden;
-                        color: black;
-                        position: absolute;
-                        text-align: center;
-                        height: 52vh;
-                        transform: rotateY(180deg);
-                        background-color: rgb(243, 217, 234);
-                        display: inline-block;
-                        width: 17vw;
-                        @media screen and (max-width: 480px){
-                            height: 100%;
-                            width: 100%;
-                        }
+                        @extend %backfoto;
                         .parrafoto{
+                            font-family: map-get($bordes, texto);
                             @media screen and (max-width: 480px){
                                 font-size: small;
                             }
@@ -73,6 +41,4 @@
                     }
                 }
             }
-        }
-    }
-}
+        

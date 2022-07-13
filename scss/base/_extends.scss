@@ -1,0 +1,62 @@
+%h1-winter-sale{
+    font-family: "Kanit", sans-serif;
+    color: lighten($bg-bordes, 20%);
+    padding: 2% 0%;
+    text-align: center;
+}
+
+%contenedortarjetas{
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    height: 60vh;
+    object-fit: cover;
+    &:hover .targeta {
+        transform: rotateY(180deg);
+    }
+}
+
+%tarjeta{
+    cursor: default;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    -webkit-animation: giro 1s 1;
+    align-items: center;
+    background-color: rgb(184, 159, 122);
+    border: none;
+    @media screen and (max-width: 480px){
+        height: 35vh;
+        width: 80vw;
+    }
+}
+
+%frontfoto{
+    backface-visibility: hidden;
+    color: black;
+    text-align: center;
+    height: 50vh;
+    border: 3px solid $bg-bordes;
+    border-radius: 10%;
+    @media screen and (max-width: 480px){
+        height: 100%;
+        width: 100%;
+    }
+}
+
+%backfoto{
+    backface-visibility: hidden;
+    color: black;
+    text-align: center;
+    position: absolute;
+    height: 52vh;
+    transform: rotateY(180deg);
+    background-color: $bg-oscuro;
+    display: inline-block;
+    width: 17vw;
+    border: 3px solid $bg-bordes;
+    border-radius: 10%;
+    background-color: lighten($bg-bordes, 40%);
+    @media screen and (max-width: 480px){
+    height: 100%;
+    width: 100%;
+    }
+}

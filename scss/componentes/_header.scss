@@ -1,9 +1,11 @@
 header{
     width: 100%;
     .header-anita{
+        border-bottom: map-get($bordes, borde);
         background-color: $bg-home-footer;
         div{
             .logo{
+                border: map-get($bordes, borde);
                 transition: all 3s;
                 &:hover{
                     transform: rotate(360deg);
@@ -11,9 +13,12 @@ header{
             }
             ul{
                 .botonav{
-                    background-color: $bg-claro;
+                    font-family: map-get($bordes, texto);
+                    border: ridge;
+                    border-color: $bg-bordes;
+                    background-color: $bg-oscuro;
                     &:hover{
-                        background-color: rgb(245, 189, 225);
+                        background-color: lighten($bg-oscuro, 5%);
                     }
                 }
             }

@@ -4,43 +4,131 @@
   box-sizing: border-box;
 }
 
+.sale h1, section h1 {
+  font-family: "Kanit", sans-serif;
+  color: #e5bd45;
+  padding: 2% 0%;
+  text-align: center;
+}
+
+.sale .container div .conttargeta, section .container div .conttargeta {
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  height: 60vh;
+  object-fit: cover;
+}
+.sale .container div .conttargeta:hover .targeta, section .container div .conttargeta:hover .targeta {
+  transform: rotateY(180deg);
+}
+
+.sale .container div .targeta, section .container div .targeta {
+  cursor: default;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  -webkit-animation: giro 1s 1;
+  align-items: center;
+  background-color: rgb(184, 159, 122);
+  border: none;
+}
+@media screen and (max-width: 480px) {
+  .sale .container div .targeta, section .container div .targeta {
+    height: 35vh;
+    width: 80vw;
+  }
+}
+
+.sale .container div .frontfoto, section .container div .frontfoto {
+  backface-visibility: hidden;
+  color: black;
+  text-align: center;
+  height: 50vh;
+  border: 3px solid #ac8718;
+  border-radius: 10%;
+}
+@media screen and (max-width: 480px) {
+  .sale .container div .frontfoto, section .container div .frontfoto {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.sale .container .backfoto, section .container div .backfoto {
+  backface-visibility: hidden;
+  color: black;
+  text-align: center;
+  position: absolute;
+  height: 52vh;
+  transform: rotateY(180deg);
+  background-color: rgb(184, 159, 122);
+  display: inline-block;
+  width: 17vw;
+  border: 3px solid #ac8718;
+  border-radius: 10%;
+  background-color: #f2dd9e;
+}
+@media screen and (max-width: 480px) {
+  .sale .container .backfoto, section .container div .backfoto {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 header {
   width: 100%;
 }
 header .header-anita {
-  background-color: rgb(238, 177, 157);
+  border-bottom: 3px solid #ac8718;
+  background-color: darkslategray;
 }
 header .header-anita div .logo {
+  border: 3px solid #ac8718;
   transition: all 3s;
 }
 header .header-anita div .logo:hover {
   transform: rotate(360deg);
 }
 header .header-anita div ul .botonav {
-  background-color: rgb(243, 217, 234);
+  font-family: "Kanit";
+  border: ridge;
+  border-color: #ac8718;
+  background-color: rgb(184, 159, 122);
 }
 header .header-anita div ul .botonav:hover {
-  background-color: rgb(245, 189, 225);
+  background-color: #c1ab8b;
 }
 
 .colorcarru {
-  background-color: darkslategray;
+  border-bottom: 3px solid #ac8718;
+  background-color: rgb(184, 159, 122);
 }
 .colorcarru div div .foto {
   height: 50vh;
 }
 
 h1 {
+  background-color: darkslategray;
   font-family: "Kanit", sans-serif;
-  color: darkslategray;
+  color: #e5bd45;
   padding: 2% 0%;
+  border-bottom: 3px solid #ac8718;
+  margin: unset;
 }
 
 .cardindex {
-  padding-bottom: 10vh;
+  padding: 10vh 5%;
 }
-.cardindex div div .videoz {
+.cardindex div div .card {
+  height: 100%;
+  border: 3px solid #ac8718;
+}
+.cardindex div div .card .videoz {
   height: 50vh;
+}
+.cardindex div div .card h5 {
+  font-family: "Kanit";
+}
+.cardindex div div .card p {
+  font-family: "Kanit";
 }
 
 .comocard {
@@ -50,7 +138,7 @@ h1 {
 }
 .comocard .como {
   width: 60vw;
-  background-color: rgb(243, 217, 234);
+  background-color: #f2dd9e;
 }
 @media screen and (max-width: 480px) {
   .comocard .como {
@@ -58,63 +146,80 @@ h1 {
   }
 }
 .comocard .como .bgcard {
-  background-color: dimgray;
+  background-color: #ac8718;
 }
 .comocard .como ol li {
+  font-family: "Kanit";
+  color: black;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
   .comocard .como ol li {
-    font-size: x-small;
+    font-size: smaller;
   }
+}
+.comocard .como .text-center {
+  color: #e5bd45;
+  font-family: "Kanit";
+}
+.comocard .como .titulotexto {
+  font-family: "Kanit";
+  color: black;
 }
 @media screen and (max-width: 480px) {
   .comocard .como .titulotexto {
     font-size: small;
   }
 }
+.comocard .como .texto {
+  font-family: "Kanit";
+  color: black;
+}
 @media screen and (max-width: 480px) {
   .comocard .como .texto {
-    font-size: x-small;
+    font-size: smaller;
   }
 }
 
 footer {
-  width: 100%;
   height: 15vh;
+  width: 100%;
   padding: 1% 5%;
-  background-color: rgb(238, 177, 157);
+  background-color: darkslategray;
+  border-top: 3px solid #ac8718;
+  text-align: center;
 }
 footer .contenido {
+  font-family: "Kanit";
   display: inline-block;
   width: 30%;
   text-align: center;
+  color: white;
 }
 footer .contenido iframe {
-  width: 10vw;
   height: 7vh;
+  width: 10vw;
   object-fit: cover;
 }
 footer .contenido .facebook {
   display: block;
+  padding-bottom: 2%;
+}
+footer .contenido .facebook .imgred {
+  height: 4vh;
 }
 footer .contenido .instagram {
   display: block;
 }
-@media screen and (max-width: 480px) {
-  footer {
-    font-size: x-small;
-  }
+footer .contenido .instagram .imgred {
+  height: 4vh;
 }
 
 section {
-  background-color: darkslategray;
+  background-color: rgb(184, 159, 122);
 }
 section h1 {
-  font-family: "Kanit", sans-serif;
-  color: rgb(238, 177, 157);
-  padding: 2% 0%;
-  text-align: center;
+  font-family: "Kanit";
 }
 section .container {
   padding-top: 4%;
@@ -123,83 +228,30 @@ section .container {
   section .container div {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(20, 40vh);
+    grid-template-rows: repeat(20, auto);
   }
 }
 section .container div .col {
   padding: 10px;
 }
-section .container div .conttargeta {
-  perspective: 800px;
-  transition: all 0.3s ease 0s;
-  height: 60vh;
-  object-fit: cover;
-}
-section .container div .conttargeta:hover .targeta {
-  transform: rotateY(180deg);
-}
-section .container div .conttargeta .targeta {
-  cursor: default;
-  transform-style: preserve-3d;
-  transition: transform 0.4s ease 0s;
-  -webkit-animation: giro 1s 1;
-  align-items: center;
-  border: none;
-}
-@media screen and (max-width: 480px) {
-  section .container div .conttargeta .targeta {
-    height: 35vh;
-    width: 80vw;
-  }
-}
-section .container div .conttargeta .targeta .card-img-top {
+section .container div .card-img-top {
   height: 50vh;
   object-fit: cover;
 }
-section .container div .conttargeta .targeta .frontfoto {
-  backface-visibility: hidden;
-  color: black;
-  position: absolute;
-  text-align: center;
-  height: 50vh;
+section .container div .parrafoto {
+  font-family: "Kanit";
 }
 @media screen and (max-width: 480px) {
-  section .container div .conttargeta .targeta .frontfoto {
-    height: 100%;
-    width: 100%;
-  }
-}
-section .container div .conttargeta .targeta .backfoto {
-  backface-visibility: hidden;
-  color: black;
-  position: absolute;
-  text-align: center;
-  height: 52vh;
-  transform: rotateY(180deg);
-  background-color: rgb(243, 217, 234);
-  display: inline-block;
-  width: 17vw;
-}
-@media screen and (max-width: 480px) {
-  section .container div .conttargeta .targeta .backfoto {
-    height: 100%;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  section .container div .conttargeta .targeta .backfoto .parrafoto {
+  section .container div .parrafoto {
     font-size: small;
   }
 }
 
 .sale {
-  background-color: darkslategray;
+  background-color: rgb(184, 159, 122);
 }
 .sale h1 {
-  font-family: "Kanit", sans-serif;
-  color: rgb(238, 177, 157);
-  padding: 2% 0%;
-  text-align: center;
+  font-family: "Kanit";
 }
 .sale .container {
   padding-top: 4%;
@@ -208,71 +260,21 @@ section .container div .conttargeta .targeta .backfoto {
   .sale .container div {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(6, 40vh);
+    grid-template-rows: repeat(6, auto);
   }
 }
 .sale .container div .col {
   padding: 10px;
 }
-.sale .container div .conttargeta {
-  perspective: 800px;
-  transition: all 0.3s ease 0s;
-  height: 60vh;
-  object-fit: cover;
-}
-.sale .container div .conttargeta:hover .targeta {
-  transform: rotateY(180deg);
-}
-.sale .container div .conttargeta .targeta {
-  cursor: default;
-  transform-style: preserve-3d;
-  transition: transform 0.4s ease 0s;
-  -webkit-animation: giro 1s 1;
-  align-items: center;
-  border: none;
-}
-@media screen and (max-width: 480px) {
-  .sale .container div .conttargeta .targeta {
-    height: 35vh;
-    width: 80vw;
-  }
-}
-.sale .container div .conttargeta .targeta .fotosale {
+.sale .container div .fotosale {
   height: 50vh;
   object-fit: cover;
 }
-.sale .container div .conttargeta .targeta .frontfoto {
-  backface-visibility: hidden;
-  color: black;
-  position: absolute;
-  text-align: center;
-  height: 50vh;
+.sale .container .backfoto .parrafoto {
+  font-family: "Kanit";
 }
 @media screen and (max-width: 480px) {
-  .sale .container div .conttargeta .targeta .frontfoto {
-    height: 100%;
-    width: 100%;
-  }
-}
-.sale .container div .conttargeta .targeta .backfoto {
-  backface-visibility: hidden;
-  color: black;
-  position: absolute;
-  text-align: center;
-  height: 52vh;
-  transform: rotateY(180deg);
-  background-color: rgb(243, 217, 234);
-  display: inline-block;
-  width: 17vw;
-}
-@media screen and (max-width: 480px) {
-  .sale .container div .conttargeta .targeta .backfoto {
-    height: 100%;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .sale .container div .conttargeta .targeta .backfoto .parrafoto {
+  .sale .container .backfoto .parrafoto {
     font-size: small;
   }
 }

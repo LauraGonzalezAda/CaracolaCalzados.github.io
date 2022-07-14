@@ -190,11 +190,8 @@ footer {
   text-align: center;
 }
 footer .contenido {
-  font-family: "Kanit";
   display: inline-block;
   width: 30%;
-  text-align: center;
-  color: white;
 }
 footer .contenido iframe {
   height: 7vh;

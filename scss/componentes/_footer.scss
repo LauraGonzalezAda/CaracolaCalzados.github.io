@@ -5,11 +5,8 @@ footer{
     border-top: map-get($bordes, borde);
     text-align: center;
     .contenido{
-        font-family: map-get($bordes, texto);
         display: inline-block;
         width: 30%;
-        text-align: center;
-        color: white;
     }
     .contenido{
         iframe{

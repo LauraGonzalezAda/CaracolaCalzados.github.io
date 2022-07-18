@@ -1,0 +1,44 @@
+body{
+    background-color: $bg-oscuro;
+    section{
+        background-color: $bg-oscuro;
+        h1{
+            @extend %h1-winter-sale;
+            font-family: map-get($bordes, texto);
+        }
+        .contcompra{
+            padding: 5% 5%;
+            width: 50vw;
+            margin: 10% auto;
+            border-radius: 55px 0px 55px 0px;
+            border: 3px solid $bg-bordes;
+            background-color: lighten($bg-bordes, 40%);
+            @media screen and (max-width: 480px) {
+            width: 90vw;
+            }
+            form{
+                .sub{
+                    display: flex;
+                    justify-content: center;
+                    .submit{
+                        width: auto;
+                        border: 1px solid $bg-bordes;
+                        margin-top: 10%;
+                        height: 10vh;
+                        background-color: $bg-oscuro;
+                        padding: 0% 3%;
+                    }
+                }
+                .formu{
+                    margin-bottom: 1%;
+                    .formuimpu{
+                        width: 100%;
+                        border: 1px solid $bg-bordes;
+                        height: 5vh;
+                        padding-left: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }

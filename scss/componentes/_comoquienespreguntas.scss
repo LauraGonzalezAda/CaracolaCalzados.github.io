@@ -14,6 +14,7 @@
         background-color: $bg-bordes;
     }
     ol{
+        margin: 0% 7% 3% 7%;
         li{
             font-family: map-get($bordes, texto);
             color: black;
@@ -38,6 +39,7 @@
     .texto{
         font-family: map-get($bordes, texto);
         color: black;
+        margin: 0% 7% 3% 7%;
         @media screen and (max-width: 480px) {
             font-size: smaller;
         }

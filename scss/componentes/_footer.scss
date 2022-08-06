@@ -10,8 +10,9 @@ footer{
     }
     .contenido{
         iframe{
-            @include tamaños(7vh, 10vw);
+            @include tamaños(9vh, 100%);
             object-fit: cover;
+            padding-top: 4%;
         }
     }
     .contenido{

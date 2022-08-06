@@ -14,7 +14,8 @@ body section h1, .sale h1, section h1 {
 .sale .container div .conttargeta, section .container div .conttargeta {
   perspective: 800px;
   transition: all 0.3s ease 0s;
-  height: 60vh;
+  height: auto;
+  width: auto;
   object-fit: cover;
 }
 .sale .container div .conttargeta:hover .targeta, section .container div .conttargeta:hover .targeta {
@@ -30,12 +31,6 @@ body section h1, .sale h1, section h1 {
   background-color: rgb(184, 159, 122);
   border: none;
 }
-@media screen and (max-width: 480px) {
-  .sale .container div .targeta, section .container div .targeta {
-    height: 35vh;
-    width: 80vw;
-  }
-}
 
 .sale .container div .frontfoto, section .container div .frontfoto {
   backface-visibility: hidden;
@@ -45,7 +40,7 @@ body section h1, .sale h1, section h1 {
   border: 3px solid #ac8718;
   border-radius: 10%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .sale .container div .frontfoto, section .container div .frontfoto {
     height: 100%;
     width: 100%;
@@ -66,7 +61,7 @@ body section h1, .sale h1, section h1 {
   border-radius: 10%;
   background-color: #f2dd9e;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .sale .container .backfoto, section .container div .backfoto {
     height: 100%;
     width: 100%;
@@ -102,7 +97,8 @@ header .header-anita div ul .botonav:hover {
   background-color: rgb(184, 159, 122);
 }
 .colorcarru div div .foto {
-  height: 50vh;
+  height: 60vh;
+  object-fit: scale-down;
 }
 
 h1 {
@@ -150,6 +146,9 @@ h1 {
 .comocard .como .bgcard {
   background-color: #ac8718;
 }
+.comocard .como ol {
+  margin: 0% 7% 3% 7%;
+}
 .comocard .como ol li {
   font-family: "Kanit";
   color: black;
@@ -177,6 +176,7 @@ h1 {
 .comocard .como .texto {
   font-family: "Kanit";
   color: black;
+  margin: 0% 7% 3% 7%;
 }
 @media screen and (max-width: 480px) {
   .comocard .como .texto {
@@ -197,9 +197,10 @@ footer .contenido {
   width: 30%;
 }
 footer .contenido iframe {
-  height: 7vh;
-  width: 10vw;
+  height: 9vh;
+  width: 100%;
   object-fit: cover;
+  padding-top: 4%;
 }
 footer .contenido .facebook {
   display: block;
@@ -256,15 +257,15 @@ section .container div .parrafoto {
 .sale .container {
   padding-top: 4%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .sale .container div {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(6, auto);
   }
 }
 .sale .container div .col {
   padding: 10px;
+  justify-self: center;
 }
 .sale .container div .fotosale {
   height: 50vh;

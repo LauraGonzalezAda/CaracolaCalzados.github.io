@@ -7,13 +7,13 @@
     .container{
         padding-top: 4%;
         div{
-            @media screen and (max-width: 480px){
+            @media screen and (max-width: 768px){
                 display: grid;
                 grid-template-columns: auto;
-                grid-template-rows: repeat(6, auto);
             }
             .col{
                 padding: 10px;
+                justify-self: center;
             }
             .conttargeta{
                 @extend %contenedortarjetas;

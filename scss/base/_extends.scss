@@ -8,7 +8,8 @@
 %contenedortarjetas{
     perspective: 800px;
     transition: all 0.3s ease 0s;
-    height: 60vh;
+    height: auto;
+    width: auto;
     object-fit: cover;
     &:hover .targeta {
         transform: rotateY(180deg);
@@ -23,10 +24,6 @@
     align-items: center;
     background-color: rgb(184, 159, 122);
     border: none;
-    @media screen and (max-width: 480px){
-        height: 35vh;
-        width: 80vw;
-    }
 }
 
 %frontfoto{
@@ -36,7 +33,7 @@
     height: 50vh;
     border: 3px solid $bg-bordes;
     border-radius: 10%;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         height: 100%;
         width: 100%;
     }
@@ -55,7 +52,7 @@
     border: 3px solid $bg-bordes;
     border-radius: 10%;
     background-color: lighten($bg-bordes, 40%);
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
     height: 100%;
     width: 100%;
     }

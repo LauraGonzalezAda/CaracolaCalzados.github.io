@@ -1,0 +1,4 @@
+User-agent: *
+allow: /
+
+Sitemap: https://lauragonzalezada.github.io/CaracolaCalzados.github.io/sitemap.xml
